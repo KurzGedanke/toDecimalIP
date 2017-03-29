@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+}
+
+body {
+  background: #1D1F21;
+  }
+
+.button {
+  color: black;
+}
+
+.text{
+  color: #C5C5A4;
+}
+
+.result{
+
+}
+
+#hrLine{
+  color: #C5C5A4;
+  background: #C5C5A4;
+}
