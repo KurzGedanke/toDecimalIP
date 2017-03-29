@@ -1,2 +1,2 @@
 # toDecimalIP
-A javascript to convert a Hex IP to a Decimal IP
+This is a website which converts a hex ip to a decimal ip.
