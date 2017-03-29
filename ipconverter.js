@@ -1,4 +1,4 @@
-function calcID() {
+function hexToDec() {
     var hexIP = document.getElementById('id1');
     document.getElementById("oc").innerHTML = "0x"+hexIP.value
 
