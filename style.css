@@ -1,25 +1,49 @@
 * {
   text-align: center;
-  font-size: 1em;
+}
+
+.wrapper{
+  position: relative;
+  left: 50%;
+  width: 100%;
+  margin-top: 20px; 
+  margin-left: -50%;
 }
 
 body {
   background: #1D1F21;
+  color: #C5C8C6
   }
+
+a {
+  color: #79BEB7
+}
+
+h1{
+  font-size: 175%;
+}
+
+.input{
+  margin-top: 5%;
+}
 
 .button {
   color: black;
 }
 
-.text{
-  color: #C5C5A4;
+.headerText{
+  color: #C5C8C6;
 }
 
-.result{
-
+#result{
+    color: #C0A7C7
 }
 
 #hrLine{
-  color: #C5C5A4;
-  background: #C5C5A4;
+  color: #C5C8C6;
+  background: #C5C8C6;
+}
+
+footer{
+  margin-top: 25%; 
 }
