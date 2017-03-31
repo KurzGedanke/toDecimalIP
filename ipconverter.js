@@ -1,13 +1,18 @@
-function hexToDec() {
+function getLineInput(){
     var hexIP = document.getElementById('id1');
-    document.getElementById("oc").innerHTML = "0x"+hexIP.value
 
-    if(hexIP.value.length == 8){
-    // hexIP.value is the input of the form which then gets convertet to an array
-    // and then to a decimal ip
-    document.getElementById("result").innerHTML = toDec(splitIP(hexIP.value))
-    } else{
-        document.getElementById("result").innerHTML = "Your IP doesn't have the length of a regular hex ip."
+    postResult(hexIP.value, toDec(splitIP(hexIP.value)));
+}
+
+function getURLParam(){
+    console.log(window.location.href);
+    var url = window.location.href;
+    try{
+        var params = url.match(/\?(.*)/g).toString().slice(1);
+        postResult(params, toDec(splitIP(params)));
+    }
+    catch(err){
+        console.log("No URL Paramater")
     }
 }
 
@@ -21,6 +26,19 @@ function splitIP(ip){
     ipSplit[3] = ip.substring(6, 8);
 
     return ipSplit;
+}
+
+function postResult(input, result){
+    document.getElementById("oc").innerHTML = "0x"+input
+
+    if(input.length == 8){
+    
+    // hexIP.value is the input of the form which then gets convertet to an array
+    // and then to a decimal ip
+    document.getElementById("result").innerHTML = result
+    } else{
+        document.getElementById("result").innerHTML = "Your IP doesn't have the length of a regular hex ip."
+    }
 }
 
 function toDec(ipArray){

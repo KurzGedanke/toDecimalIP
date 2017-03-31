@@ -5,8 +5,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="ipconverter.js"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <link rel="search" type="application/opensearchdescription+xml" title="KurzGedanke" href="/opensearch.xml" />
 </head>
-  <body>
+  <body onload="getURLParam();">
     <div class="wrapper">
       <h1>Converts a HexIP to a DecimalIP</h1>
       <hr id ="hrLine">
@@ -14,7 +15,7 @@
         <p> Please enter the IP in the following format: 7F000001 </p>
         <div class="button">
           <input id="id1" type="text" min="0" required>
-          <button onclick="hexToDec()">OK</button>
+          <button onclick="getLineInput()">OK</button>
         </div>
         <p>
            Input: <span id="oc"></span>
