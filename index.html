@@ -3,9 +3,17 @@
 <head>
   <title>HexIP Converter</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="search" type="application/opensearchdescription+xml" title="KurzGedanke" href="/opensearch.xml" />
   <script src="js/ipconverter.js"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <link rel="search" type="application/opensearchdescription+xml" title="KurzGedanke" href="/opensearch.xml" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("input").keypress(function(){
+        getLineInput()
+      });
+    });
+</script>
 </head>
   <body onload="getURLParam();">
     <div class="wrapper">
