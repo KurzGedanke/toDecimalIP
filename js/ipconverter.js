@@ -5,7 +5,8 @@ function getLineInput(){
 }
 
 function getURLParam(){
-    console.log(window.location.href);
+    // matches the url with an regual expression to get the 
+    // ip out of the url
     var url = window.location.href;
     try{
         var params = url.match(/\?(.*)/g).toString().slice(1);
@@ -56,5 +57,3 @@ function toDec(ipArray){
     // return the decIP as a string with the "," replaced with whitespace
     return decIP.toString().replace(/,/g, '');
 }
-
-// IP: 127.0.0.1 --> 0x7F.00.00.01 || 7F8A127C
