@@ -33,10 +33,11 @@ function postResult(input, result){
     document.getElementById("oc").innerHTML = "0x"+input
 
     if(input.length == 8){
-    
-    // hexIP.value is the input of the form which then gets convertet to an array
-    // and then to a decimal ip
+                            // hexIP.value is the input of the form which then gets convertet to an array
+                            // and then to a decimal ip
     document.getElementById("result").innerHTML = result
+    document.getElementById("maxmind").innerHTML = "<a href=\"https://www.maxmind.com/en/geoip2-precision-demo?ip=" + result + "\">https://www.maxmind.com/en/geoip2-precision-demo?ip=" + result + "</a>"
+    document.getElementById("domaintools").innerHTML = "<a href=\"https://whois.domaintools.com/" + result + "\">https://whois.domaintools.com/" + result + "</a>"
     } else{
         document.getElementById("result").innerHTML = "Your IP doesn't have the length of a regular hex ip."
     }
