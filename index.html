@@ -2,20 +2,23 @@
 <html>
 <head>
   <title>HexIP Converter</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  
   <link rel="search" type="application/opensearchdescription+xml" title="KurzGedanke" href="/opensearch.xml" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="js/jquery-js.js"></script>
   <script src="js/ipconverter.js"></script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="UTF-8">
   <meta name="description" content="Converts a HexIP to a DecimalIP">
   <meta name="keywords" content="ip, converter, free, HexIP, DecimalIP, decimal, hex, hexadecimal, online">
   <meta name="author" content="KurzGedanke">
 </head>
   <body onload="getURLParam();">
-    <div class="wrapper">
+    <div class="container text-center">
       <h1>Converts a HexIP to a DecimalIP</h1>
       <hr id ="hrLine">
       <div class="input">
@@ -24,7 +27,7 @@
           <input id="id1" type="text" min="0" required>
           <button onclick="getLineInput()">OK</button>
         </div>
-        <p>
+        <p style="margin-top: 5%;">
            Input: <span id="oc"></span>
         </p>
         <p>
@@ -41,16 +44,18 @@
       </div> 
       <noscript>Please enable JavaScript!</noscript> 
       </p>
-      <footer>
+      </div>
+      <footer class="footer">
+        <div class="container text-center">
         <p>
           <a href="https://github.com/KurzGedanke"> Created by KurzGedanke</a>
         </p>
-        <p>You can use this tool on your own website: <a class="github-button" href="https://github.com/KurzGedanke/toDecimalIP/fork" data-icon="octicon-repo-forked" data-count-href="/KurzGedanke/toDecimalIP/network" data-count-api="/repos/KurzGedanke/toDecimalIP#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork KurzGedanke/toDecimalIP on GitHub">Fork</a>
+        <p>You can use this tool on your own website: <a href="https://github.com/KurzGedanke/toDecimalIP">GitHub</a>
         </p>
         <p>
           License: <a href="https://github.com/KurzGedanke/toDecimalIP/blob/master/LICENSE">GNU General Public License v3.0</a>
         </p>
+        </div>
       </footer>
-      </div>
   </body>
 </html>
